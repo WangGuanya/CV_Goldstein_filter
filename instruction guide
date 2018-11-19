@@ -1,0 +1,41 @@
+******************************************************************************************************
+******************************************************************************************************
+Thanks for using the modified Goldstein filter!
+We apply the frequency spectrum coefficient variation into the determination of filtering parameter α.
+The modified filter performs better in the reduction of phase unwrapping residues and phase noise.
+
+******************************************************************************************************
+Here are the instructions for the interpretation and operation of the package.
+
+******************************************************************************************************
+The program is written in Matlab.
+
+1. "main.m" : the main function of the program running.
+
+2. "fringe_estimate_coarse" & "fringe_reconstruction_corase" : used for fringe reconstruction and removal.
+
+3. "cv_goldstein_sim" : used for interferogram filtering.
+
+4. "cv_calculation" :used for the calculation of CV in one unit patch.
+
+5. "cv_main" : used for the calculation of CV in the whole interferogram.
+
+6. "cv_alpha_fit" : used for curve fitting between CV and α.
+
+7. "index_model" : used for evaluating the fitered interferogram.
+
+8. "wrap" : wrap interferometric phase for function 7.
+
+functions 4~6 are all applied in function 3.
+
+
+******************************************************************************************************
+To test the modified filter, you just need to run the "main" file.
+
+******************************************************************************************************
+Test data is stored under the same path as the "main" file, named "sim_phase_with_noise_two_look.dat";
+
+and the output files are stored in the folder "Results" in .tiff.
+
+******************************************************************************************************
+******************************************************************************************************
